@@ -34,8 +34,18 @@ public class Main {
         byte challengeByte = 2;
         short challengeShort = 2543;
         int challengeInt = 323454;
-        long challengeLong = (50000 + ((challengeByte + challengeShort + challengeInt) * 10));
+        long challengeLong = (50000L+ ((challengeByte + challengeShort + challengeInt) * 10L));
+        short shortTotal = (short) (1000 + 10 * (challengeByte + challengeShort + challengeInt));
 
+        float myMinFloatValue = Float.MIN_VALUE;
+        float myMaxFloatValue = Float.MAX_VALUE;
+
+        System.out.println("Float min = " + myMinFloatValue);
+        System.out.println("Float min = " + myMaxFloatValue);
+
+        int myInt = 5;
+        float myFloat = 5.25F;
+        double myDouble = 5.25D;
 
     }
 }
